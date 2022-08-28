@@ -25,7 +25,6 @@
     font-style: italic;
 }
 
-
 @font-face {
     font-family: 'Muller';
     src: local('Muller Regular'), local('MullerRegular')   
@@ -61,8 +60,6 @@
     font-weight: 500;
     font-style: italic;
 }
-
-
 
 @font-face {
     font-family: 'Muller';
@@ -142,11 +139,10 @@ h1, h2, h3, h4, h5 {
 }
 
 .btn_l {
-    padding: 24px 75.5px;
-    background: #6D31EE;
-    border-radius: 20px;
-    font-size: 18px;
-    color: rgb(0, 0, 0);
+    display: inline-block;
+    padding: 25px 54px;
+    border-radius: 40px;
+    transition: background .2s ease;
 }
 
 
@@ -479,6 +475,7 @@ margin-right: 58.75px;
 }
 
 .podcasts__blocks {
+    margin-bottom: 60px;
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
@@ -547,7 +544,29 @@ margin-right: 58.75px;
     color: #A1A6B4;
 }
 
-.podcasts__btn_play {
+.podcasts__btn_play:hover circle {
+    stroke:#6D31EE ;
+} 
+
+.podcasts__btn_play:hover path {
+    fill: #6D31EE ;
+}
+
+.podcasts__btn_play:focus circle {
+    stroke:#AA9DFA ;
+} 
+
+.podcasts__btn_play:focus path {
+    fill: #AA9DFA ;
+}
+
+.podcasts__btn_play:active circle {
+    stroke:#4F28A5 ;
+    fill: #4F28A5;
+} 
+
+.podcasts__btn_play:active path {
+    fill: white ;
 }
 
 .podcasts__info {
@@ -570,6 +589,27 @@ margin-right: 58.75px;
 
 .podcasts__svg svg {
     margin-right: 8px;
+}
+.podcasts__svg svg path,
+.podcasts__svg p {
+    transition: all .2s ease;
+}
+
+.podcasts__svg:hover svg path,
+.podcasts__svg:hover p {
+    color: #6D31EE;
+    fill: #6D31EE;
+}
+
+.podcasts__svg:focus svg path,
+.podcasts__svg:focus p {
+    background: #AA9DFA;
+}
+
+.podcasts__svg:active svg path,
+.podcasts__svg:active p {
+    color: #4F28A5;
+    fill: #4F28A5;
 }
 
 .podcasts__play {
@@ -599,9 +639,33 @@ margin-right: 58.75px;
 .share__numb {
 }
 
-.podcasts__btn {
+.podcasts__link {
     text-align: center;
 }
 
-.podcasts__link {
+.podcasts__btn {
+    border: 2px solid #6D31EE;
+    color: #6D31EE;
+    font-weight: 500;
+    font-size: 20px;
 }
+
+.podcasts__btn:hover {
+    background: #6D31EE;
+    color: #ffffff;
+}
+
+.podcasts__btn:focus {
+    border: none;
+    outline: 2px solid #4F28A5;
+    background: #AA9DFA;
+    color: #ffffff;
+}
+
+.podcasts__btn:active {
+    border: 2px solid #4F28A5;
+    outline: none;
+    background: #4F28A5;
+    color: #ffffff;
+}
+
