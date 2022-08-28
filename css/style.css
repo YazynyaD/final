@@ -145,6 +145,10 @@ h1, h2, h3, h4, h5 {
     transition: background .2s ease;
 }
 
+.title {
+    font-weight: 400;
+    font-size: 48px;
+}
 
 /* Head */
 
@@ -460,10 +464,14 @@ margin-right: 58.75px;
 .banner__img {
 }
 
+
+
 /* Podcasts */
 
 .podcasts {
     background: #F2F2F2;
+    padding: 94px 0;
+    margin: 0 0 94px 0;
 }
 
 .podcasts__container {
@@ -669,3 +677,61 @@ margin-right: 58.75px;
     color: #ffffff;
 }
 
+/* Broadcast */
+
+.broadcast {
+}
+
+.broadcast__container {
+    display: flex;
+}
+
+/* broadcast__description  */
+
+.broadcast__description {
+}
+
+.broadcast__description_select {
+}
+
+.broadcast__title {
+}
+
+.broadcast__autor {
+}
+
+.broadcast__select {
+}
+
+.broadcast__description_text {
+}
+
+.broadcast__img {
+}
+
+.broadcast__btn {
+}
+
+
+.broadcast__text {
+}
+
+
+/* broadcast__cards */
+.broadcast__cards {
+}
+
+.broadcast__card {
+}
+
+.broadcast__card_img {
+}
+
+.broadcast__card_title {
+}
+
+.broadcast__card_description {
+}
+
+.broadcast__card_link {
+}
